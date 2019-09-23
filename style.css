@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  height: 2000px;
   font-family: sans-serif;
   padding: 180px;
   color: rgb(48, 48, 48);
@@ -21,6 +22,10 @@ section {
   border: 1px solid rgb(226, 226, 226);
   height: 400px;
   overflow: auto;
+}
+
+section::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -86,4 +91,11 @@ iframe {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+img {
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  margin-right: 50px;
 }
